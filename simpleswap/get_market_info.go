@@ -7,8 +7,8 @@ import (
 	"os"
 )
 
-func GetMarketInfo(apiKey string) string {
-	requestURL := fmt.Sprintf("https://api.simpleswap.io/get_market_info?api_key=%s&%s", apiKey)
+func GetMarketInfo() string {
+	requestURL := fmt.Sprintf("https://api.simpleswap.io/get_market_info")
 	response, err := http.Get(requestURL)
 	if err != nil {
 		fmt.Printf("error making http request: %s\n", err)

@@ -14,7 +14,7 @@ go run main.go
 ```
 GET `/get_all_currencies`
 GET `/get_currency`
-GET `/get_all_currencies`
+GET `/get_market_info`
 GET `/get_exchange`
 ```
 

@@ -24,9 +24,9 @@ func main() {
 		})
 	})
 
-	r.GET("/get_exchange", func(c *gin.Context) {
+	r.GET("/get_market_info", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"get_currency": Simpleswap.GetExchange(apiKey),
+			"get_currency": Simpleswap.GetMarketInfo(),
 		})
 	})
 
