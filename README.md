@@ -1,2 +1,20 @@
 # go-simpleswap
-SimpleSwap is a user-friendly and reliable service for cryptocurrency exchanges. Our platform is free from sign-up and supports more than 1000 crypto and fiat currencies.
+
+
+### Init project
+
+```bash
+go mod init github.com/null-none/go-simpleswap
+go mod tidy
+go run main.go
+```
+
+### Endpoints
+
+```
+GET `/get_all_currencies`
+GET `/get_currency`
+GET `/get_all_currencies`
+GET `/get_exchange`
+```
+
