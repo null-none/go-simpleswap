@@ -7,8 +7,8 @@ import (
 	"os"
 )
 
-func GetExchange(apiKey string, limit int, offset int) string {
-	requestURL := fmt.Sprintf("https://api.simpleswap.io/get_exchange?api_key=%s&%d&%d", apiKey, limit, offset)
+func GetExchanges(apiKey string, id string) string {
+	requestURL := fmt.Sprintf("https://api.simpleswap.io/get_exchanges?api_key=%s&%s", apiKey, id)
 	response, err := http.Get(requestURL)
 	if err != nil {
 		fmt.Printf("error making http request: %s\n", err)
