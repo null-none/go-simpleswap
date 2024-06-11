@@ -55,7 +55,7 @@ func main() {
 			return
 		}
 		c.JSON(http.StatusOK, gin.H{
-			"get_currency": Simpleswap.GetExchange(apiKey, json.Id),
+			"get_currency": Simpleswap.GetExchanges(apiKey, json.Id),
 		})
 	})
 
